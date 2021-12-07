@@ -26,7 +26,7 @@ main {
     text-align: center;
 }
 
-p.instrucao{
+p.instrucao {
     margin: 20px;
     text-align: justify;
 }
@@ -45,16 +45,16 @@ div.form input {
     height: 50px;
     margin: 5px;
     font-size: 1.3rem;
-    border: none;    
+    border: none;
     transition: all 0.3s ease;
 }
 
 div.form input[type='text'] {
-    border: 1px solid ;
+    border: 1px solid;
 }
 
 div.form input[type='submit'] {
-    background: linear-gradient(to right,#3DFFE7,  #417AE8);
+    background: linear-gradient(to right, #3DFFE7, #417AE8);
     cursor: pointer;
     color: white;
     font-size: 1.3rem;
@@ -64,7 +64,7 @@ div.form input[type='submit'] {
 
 div.form input[type='submit']:hover {
     letter-spacing: 0.5px;
-    background: linear-gradient(to left,#3DFFE7,  #417AE8);
+    background: linear-gradient(to left, #3DFFE7, #417AE8);
 }
 
 div.resultadoParas {
@@ -78,9 +78,10 @@ div.resultadoParas {
     font-size: 1.8rem;
     font-weight: 600;
 }
+
 button {
     outline: none;
-    background: linear-gradient(to right,#3DFFE7,  #417AE8);
+    background: linear-gradient(to right, #3DFFE7, #417AE8);
     width: 100px;
     height: 80px;
     margin: 5px;

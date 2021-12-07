@@ -55,14 +55,14 @@ function conferirPalpite() {
 }
 
 function dicaPalpites(texto, diferenca) {
-    
+
     if (diferenca > 50)
-    baixoOuAlto.textContent = 'Seu palpite está muito ' + texto;
+        baixoOuAlto.textContent = 'Seu palpite está muito ' + texto;
 
     else if (diferenca <= 50 && diferenca > 10)
         baixoOuAlto.textContent = 'Seu palpite está ' + texto;
 
-    else if (diferenca  <= 10)
+    else if (diferenca <= 10)
         baixoOuAlto.textContent = 'Seu palpite está perto! Mas está ' + texto;
 }
 
