@@ -5,6 +5,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
 }
 
 html{
@@ -51,6 +52,39 @@ section{
 
 }
 
+section h3.title{
+	color: #414a4f;
+	text-transform: capitalize; 
+	font: bold 32px 'Open Sans', sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+}
+
+section p{
+	max-width: 800px;
+	text-align: center;
+	margin-bottom: 35px;
+	padding: 0 20px;
+	line-height: 2;
+}
+
+ul.grid{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+/*-------------
+ 	Return Home
+-------------*/
+
+i#return-home {
+	font-size: 50px;
+	top: 15px;
+	right: 15px;
+	position: fixed;
+
+}
 
 /*-------------
  	Header
@@ -158,4 +192,149 @@ header nav li:last-child{
 	.section-header h3{
 		font-size: 24px;
 	}
+}
+/*----------------------
+ 	About Section
+----------------------*/
+
+.about p{
+	text-align: justify;
+}
+
+/*----------------------
+ 	Experience Section
+----------------------*/
+
+.experience{
+	background-color: #ececec;
+}
+
+.experience .grid li{
+	padding: 0 30px;
+	
+	flex-basis: 66%;
+	text-align: center;
+}
+
+.experience .grid li i{
+    font-size: 50px;
+    color: #2196F3;
+    margin-bottom: 25px;
+}
+
+.experience .grid li h4{
+	color: #555;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.experience .grid li p{
+    margin: 0;
+}
+
+@media (max-width: 1000px){
+
+	.experience .grid li{
+		flex-basis: 70%;
+		margin-bottom: 65px;
+	}
+	.experience .grid li:last-child{
+		margin-bottom: 0;
+	}
+}
+
+@media (max-width: 600px){
+	.experience .grid li{
+		flex-basis: 100%;
+	}
+}
+
+/*--------------------
+ 	Projects Section
+---------------------*/
+
+hr{
+	width: 150px;
+	height: 2px;
+	background-color: #2196F3;
+	border: 0;
+	margin-bottom: 80px;
+}
+
+.projects{
+	background-color: #fff;
+}
+
+.projects .grid li{
+	padding: 20px;
+	height: 200px;
+	flex-basis: 45%;
+	border-radius: 3px;
+
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+	background-color: #333;
+}
+
+@media (max-width: 850px){
+
+	.projects .grid li{
+		flex-basis: 85%;
+	}
+
+}
+
+@media (max-width: 700px){
+
+	.projects .grid li{
+		padding: 10px;
+		flex-basis: 100%;
+	}
+
+}
+
+/*---------------------
+ 	Contact Section
+-----------------------*/
+
+.contact {
+	background-color: #ececec;
+	align-items: center;
+	text-align: center;
+	padding: 60px 0;	
+}
+
+.contact ul {
+	display: flex;
+	margin-bottom: 25px;
+	font-size: 120px;
+	color: #2196F3;
+}
+
+.contact  ul li{
+	margin: 0 50px;	
+}
+
+@media (max-width: 650px){
+
+	.contact .grid li {
+		flex-basis: 100%;
+	}
+
+}
+
+/*-------------
+ 	Footer
+---------------*/
+
+footer {
+	background-color: #414a4f;
+	color: #fff;
+	padding: 60px 0;
+}
+
+footer p {
+	padding: 0 20%;
+	text-align: justify;
 }
