@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: rgb(81,93,83);
+	background: linear-gradient(90deg, rgba(81,93,83,1) 0%, rgba(176,115,96,1) 47%, rgba(193,195,207,1) 100%);
+}
+
+/* --------------
+	Home Style
+----------------- */
+
+.main {
+	height: 89vh;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+	justify-content: space-around;
+}
+
+.main img#img-perfil {
+	width: 350px;
+	height: 350px;
+    border-radius: 50%;
+}
+
+.presentation {
+	color: #fff;
+	font-family: 'Nunito', sans-serif;
+	
+}
+
+.presentation h1 {
+	font-size: 7vw;
+}
+
+.presentation p {
+	max-width: 50vw;
+	font-size: 1.2vw;
+	text-align: justify;
+}
+
+.presentation button {
+	background-color: #3A1240;
+	border-radius: 20px;
+	border-style: none;
+	padding: 5px 10px;
+	margin-top: 5px;
+}
+
+.presentation button a {
+	color: #fff;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+	font-size: 14px;
+	letter-spacing: 1px;
+}
+
+.presentation button:hover {
+	background-color: #4c1955;
+}
+
+@media (max-width: 1000px) {
+	.main {
+		flex-direction: column;
+		height: 89vh;
+	}
+
+	.main img#img-perfil {
+		max-width: 250px;
+		max-height: 250px;
+	}
+
+	.presentation p {	
+		font-size: 1.6vw;
+	}
+}
+
+@media (max-width: 580px) {
+	.presentation h1 {
+		font-size: 10vw;
+	}
+	
+	.presentation p {	
+		font-size: 1.8vw;
+	}
+}
+
+/* --------------
+	About Style
+----------------- */
+
