@@ -16,7 +16,7 @@ body {
 	Home Style
 ----------------- */
 
-.main {
+.main-home {
 	height: 89vh;
 	display: flex;
 	flex-direction: row-reverse;
@@ -24,7 +24,7 @@ body {
 	justify-content: space-around;
 }
 
-.main img#img-perfil {
+.main-home img#img-perfil {
 	width: 350px;
 	height: 350px;
     border-radius: 50%;
@@ -67,12 +67,12 @@ body {
 }
 
 @media (max-width: 1000px) {
-	.main {
+	.main-home {
 		flex-direction: column;
 		height: 89vh;
 	}
 
-	.main img#img-perfil {
+	.main-home img#img-perfil {
 		max-width: 250px;
 		max-height: 250px;
 	}
@@ -96,3 +96,41 @@ body {
 	About Style
 ----------------- */
 
+.main-about {
+	min-height: 89vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: 'Nunito', sans-serif;
+	color: #fff;
+}
+
+.main-about h1 {
+	margin: 40px;
+	margin-bottom: 30px;
+	font-size: 4vw;
+	letter-spacing: 2px;
+}
+
+.main-about span {
+	width: 15vw;
+	height: 2px;
+	background-color: #3A1240;
+	margin-bottom: 10px;
+}
+
+.main-about p {
+	max-width: 80vw;
+	text-align: justify;
+	margin: 20px;
+}
+
+@media (max-width: 1000px) {
+	.main-about h1 {
+		font-size: 8vw;
+	}
+
+	.main-about span {
+		width: 25vw;
+	}
+}
