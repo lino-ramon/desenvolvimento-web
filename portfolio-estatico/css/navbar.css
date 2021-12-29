@@ -22,7 +22,6 @@ ul a:hover {
 	font-size: 38px;
 	text-transform: uppercase;
 	letter-spacing: 4px;
-	
 }
 
 nav {
@@ -41,7 +40,7 @@ nav {
 
 .nav-list li {
 	letter-spacing: 3px;
-	margin-left: 32px;
+	margin-left: 10px;
 }
 
 @media (max-width: 1000px) {

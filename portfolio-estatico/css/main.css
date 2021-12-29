@@ -9,7 +9,7 @@
 
 body {
 	background: rgb(81,93,83);
-	background: linear-gradient(90deg, rgba(81,93,83,1) 0%, rgba(176,115,96,1) 47%, rgba(193,195,207,1) 100%);
+	background: linear-gradient(90deg, rgba(81,93,83,1) 0%, rgba(176,115,96,1) 35%, rgba(193,195,207,1) 100%);
 }
 
 /* --------------
@@ -52,6 +52,7 @@ body {
 	border-style: none;
 	padding: 5px 10px;
 	margin-top: 5px;
+	cursor: pointer;
 }
 
 .presentation button a {
@@ -93,10 +94,12 @@ body {
 }
 
 /* --------------
-	About Style
+	Generic Style
 ----------------- */
 
-.main-about {
+.main-about, 
+.main-education,
+.main-experience {
 	min-height: 89vh;
 	display: flex;
 	flex-direction: column;
@@ -105,19 +108,104 @@ body {
 	color: #fff;
 }
 
-.main-about h1 {
+.main-about h1, 
+.main-education h1,
+.main-experience h1 {
 	margin: 40px;
 	margin-bottom: 30px;
-	font-size: 4vw;
+	font-size: 48px;
 	letter-spacing: 2px;
 }
 
-.main-about span {
-	width: 15vw;
+.main-about .separator, 
+.main-education .separator,
+.main-experience .separator {
+	width: 150px;
 	height: 2px;
 	background-color: #3A1240;
 	margin-bottom: 10px;
 }
+
+.on {
+	background-color: #3A1240;
+}
+
+.on:hover {
+	background-color: #4c1955;
+}
+
+.container {
+	max-width: 60vw;
+	display: flex;
+	text-align: justify;
+	align-items: center;
+	margin: 20px;
+}
+
+.right {
+	flex-direction: row-reverse;
+}
+
+.container i {
+	color: #3A1240;
+	font-size: 56px;
+	margin: 15px;
+	margin-left: 0px;
+}
+
+.right i {
+	margin-left: 15px;
+	margin-right: 0px;
+}
+
+.container h5 {
+	color: #3A1240;
+	font-weight: 900;
+}
+.right h5 {
+	text-align: right;
+}
+
+@media (max-width: 1000px) {
+	.main-about h1,
+	.main-education h1,
+	.main-experience h1 {
+		font-size: 48px;
+	}
+
+	.main-about .separator, 
+	.main-formation .separator,
+	.main-experience .separator {
+		width: 150px;
+	}
+
+	.on {
+		background-color: #404040;
+	}
+
+	.on:hover {
+		background-color: #404040;
+	}
+
+	.container {
+		max-width: 70vw;
+	}
+}
+
+@media (max-width: 580px) {
+	.container {
+		max-width: 80vw;
+		flex-direction: column;
+	}
+
+	.container h5 {
+		text-align: center;
+	}
+}
+
+/* --------------
+	About Style
+----------------- */
 
 .main-about p {
 	max-width: 80vw;
@@ -125,12 +213,7 @@ body {
 	margin: 20px;
 }
 
-@media (max-width: 1000px) {
-	.main-about h1 {
-		font-size: 8vw;
-	}
 
-	.main-about span {
-		width: 25vw;
-	}
-}
+/* --------------
+	Education Style
+----------------- */
