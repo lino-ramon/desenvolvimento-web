@@ -99,7 +99,8 @@ body {
 
 .main-about, 
 .main-education,
-.main-experience {
+.main-experience,
+.main-projects {
 	min-height: 89vh;
 	display: flex;
 	flex-direction: column;
@@ -110,7 +111,8 @@ body {
 
 .main-about h1, 
 .main-education h1,
-.main-experience h1 {
+.main-experience h1,
+.main-projects h1 {
 	margin: 40px;
 	margin-bottom: 30px;
 	font-size: 48px;
@@ -119,7 +121,8 @@ body {
 
 .main-about .separator, 
 .main-education .separator,
-.main-experience .separator {
+.main-experience .separator,
+.main-projects .separator {
 	width: 150px;
 	height: 2px;
 	background-color: #3A1240;
@@ -169,13 +172,15 @@ body {
 @media (max-width: 1000px) {
 	.main-about h1,
 	.main-education h1,
-	.main-experience h1 {
+	.main-experience h1,
+	.main-projects h1 {
 		font-size: 48px;
 	}
 
 	.main-about .separator, 
 	.main-formation .separator,
-	.main-experience .separator {
+	.main-experience .separator,
+	.main-projects .separator {
 		width: 150px;
 	}
 
@@ -215,5 +220,35 @@ body {
 
 
 /* --------------
-	Education Style
+	Projects Style
 ----------------- */
+
+.projects {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.projects div.projects-box{
+	margin: 10px;
+	max-width: 350px;
+	height: 200px;
+	flex-basis: 45%;
+	border-radius: 3px;
+	border-style: solid;
+	border-color: #4c1955;
+
+	background-clip: content-box;
+	background-size: cover;
+	background-position: center;
+	background-color: #333;
+	opacity: 0.9;
+	z-index: -1;
+}
+
+@media (max-width: 1000px) {
+	.projects div.projects-box {
+		flex-basis: 70%;
+	}
+}
