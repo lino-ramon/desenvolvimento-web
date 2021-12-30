@@ -31,6 +31,60 @@
         </nav>
     </header>
 
+    <div class="main-contact">
+        <h1 class="animation-title">Contact</h1>
+
+        <span class="separator"></span>
+
+        <div class="form animation-bottom">
+            <form action="#" onsubmit="return validarTudo();" >
+                <fieldset>
+                    <div class="form-container">
+                        <input type="text" required id="name" name="name" placeholder="Ex: Lorem">
+                        <label>Name</label>
+                    </div>
+    
+                    <div class="form-container">
+                        <input type="tel" required id="tel" name="tel" placeholder="Ex.: 83 912345678">
+    
+                        <label>Phone number</label>
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <div class="form-container">
+                        <input type="email" id="email" required name="email" placeholder="exemple@email.com">
+                        <label for="">Email</label>
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <div class="form-container">
+                        <select name="type-mensage" id="">
+                            <option value="other">Other</option>
+                            <option value="doubt">Doubt</option>
+                            <option value="suggestion">Suggestion</option>
+                            <option value="review">Review</option>
+                        </select>
+    
+                        <label for="">Type</label>
+                    </div>
+                </fieldset>
+    
+                <fieldset>
+                    <div class="form-container">
+                        <textarea name="comment" id="comment" required cols="50" rows="7" placeholder="Type a mensage"></textarea>
+                        <label for="">Mensage</label>
+                    </div>
+    
+                    <button type="submit">Send</button>
+                </fieldset>
+            </form>
+
+        </div>
+        
+    </div>
+
     <script src="js/app.js"></script>
 </body>
 </html>
